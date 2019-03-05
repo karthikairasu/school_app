@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Assistant|Oxygen" rel="stylesheet">
+  <style>
+     .box{
+       min-height:130px;
+       width:220px;
+       border:2px solid #6eabf9;
+       margin:10px;
+       background-color: #bad8ff;
+     }
+     .top{
+      margin:0px 10px;
+      border-bottom: 1px solid #b1acac;
+      position:relative;
+     }
+     .left{
+      font-size:13px;
+      font-family:Oxygen;
+      padding:5px;
+     }
+     .right{ 
+      font-size:13px;
+      font-family:Oxygen;
+      padding:5px;
+      position:absolute;
+      top:0px;
+      right:0px
+     }
+     .paytype{
+      font-size:13px;
+      font-family:Assistant;
+      text-align: center;
+      margin: 2px 0px;
+     }
+     .payreceive{
+      font-size:13px;
+      font-family:Oxygen;
+      padding: 3px 6px;
+     }
+     .bottom{
+      margin:1px 1px; 
+      position:relative;
+     }
+     .cancelor{
+      font-size:13px;
+      font-family:Oxygen;
+      padding: 3px 6px;
+      border-radius: 0px;
+     }
+     .printbill{
+      font-size:13px;
+      font-family:Oxygen;
+      padding: 3px 6px;
+      border-radius: 0px;
+      position:absolute;
+      bottom:0px;
+      right:0px
+     }
+     .payrec{
+      margin-bottom:2px
+     }
+  </style>
+</head>
+<body>
+  
+<div class="container">
+  <h1>My Payment</h1> 
+     <div class="box">
+  
+        <p class="row top">
+        <span class="left">Order Id: 001</span> 
+        <span class="right"> Amount :
+          <i class="fas fa-rupee-sign"></i> 200</span>
+        </p>
+        
+        <p class="paytype">Payment Mode:  Cashrguhiugh</p>
+        <p class="paytype">Payment id: 746715272jshvbhsbvhbshd</p>
+        <p class=" text-center payrec">
+          <button class="btn btn-success payreceive">Payment received</button></p>
+          
+          <p class="row bottom">
+            <button class="btn btn-danger text-left cancelor">
+               <i class="fas fa-ban"></i> Cancelorder</button>
+            <button class="btn btn-warning float-right printbill">
+              <i class="fas fa-print"></i> PrintBill</button>
+        </p>
+  </div>
+  
+</div>
+
+</body>
+</html>
